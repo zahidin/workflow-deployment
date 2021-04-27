@@ -13,7 +13,7 @@ router.get('/', (context: RouterContext) => {
 
 router.get('/me', (context: RouterContext) => {
     context.response.status = 200;
-    context.response.body = 'Hello Zahidin'
+    context.response.body = 'Hello zahidin'
 })
     
 app.use(router.routes())
