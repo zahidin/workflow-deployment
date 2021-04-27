@@ -11,6 +11,11 @@ router.get('/', (context: RouterContext) => {
     context.response.body = database
 })
 
+router.get('/me', (context: RouterContext) => {
+    context.response.status = 200;
+    context.response.body = 'Hello Zahidin'
+})
+    
 app.use(router.routes())
 app.use(router.allowedMethods())
 
